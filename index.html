@@ -25,70 +25,72 @@
 
   <!-- Add your site or application content here -->
 
-  <header>
-    <!-- <img src="./img/sandrachile-483700-unsplash.jpg" alt="poem"/> -->
-    <figcaption>Photo by Sandrachile on Unsplash</figcaption>
-    <h1>Sarah Smiths</h1>
+  <div className="wrapper">
+    <header>
+      <!-- <img src="./img/sandrachile-483700-unsplash.jpg" alt="poem"/> -->
+      <figcaption>Photo by Sandrachile on Unsplash</figcaption>
+      <h1>Sarah Smiths</h1>
 
-    <nav>
-      <ul>
-        <li><a herf="#">About</a></li>
-        <li><a herf="#">Work</a></li>
-        <li><a herf="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav>
+        <ul>
+          <li><a herf="#">About</a></li>
+          <li><a herf="#">Work</a></li>
+          <li><a herf="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section className="item about">
-      <!-- <img src="./img/alexander-solodukhin-4394-unsplash.jpg" alt="sara smith portrait"/> -->
-      <figcaption>  Photo by Alexander Solodukhin on Unsplash</figcaption>
-      <h1>About</h1>
-      <p>I'm an author who loves sharing great stories.</p>
-      <p>Born and raised in the Providence, Rhode Island, I was a bookseller before making the leap to be a full-time writer. I transitioned to publishing where I worked at a literary development company, as a creative writing college instructor, and as a book reviewer of children’s and young adult novels. I now live in Portland, Oregon exploring the luscious green forest for my next story.</p>
-    </section>
+    <main>
+      <section id="about" className="items">
+        <!-- <img src="./img/alexander-solodukhin-4394-unsplash.jpg" alt="sara smith portrait"/> -->
+        <figcaption>Photo by Alexander Solodukhin on Unsplash</figcaption>
+        <h1>About</h1>
+        <p><span>I'm an author who loves sharing great stories.</span></p>
+        <p>Born and raised in the Providence, Rhode Island, I was a bookseller before making the leap to be a full-time writer. I transitioned to publishing where I worked at a literary development company, as a creative writing college instructor, and as a book reviewer of children’s and young adult novels. I now live in Portland, Oregon exploring the luscious green forest for my next story.</p>
+      </section>
 
-    <section className="item work">
-      <h1>Work</h1>
-      <article>
-        <!-- <img src="./img/jackson-wong-499761-unsplash.jpg"/> -->
-        <figcaption>Photo by Ksenia Kudelkina on Unsplash</figcaption>
-        <h3>A Brief History of Tea Drinking Customs</h3>
-        <p>Tea culture, drinking practices, tea utensils, and teas have changed over a long period of time. Its impact on the world has been a long journey that as of recently has begun to take new form.</p>
-      </article>
-      <article>
-        <!-- <img src="./img/ksenia-kudelkina-7103-unsplash.jpg"/> -->
-        <figcaption>Photo by Ksenia Kudelkina on Unsplash</figcaption>
-        <h3>The Cave - A Time Portal</h3>
-        <p>Ever wonder if all the caves around the world connected through one simple system? Where does one door end and the other begin? What if we can illuminate all the pathways with a single bright light? Oh, the splendor we would see.</p>
-      </article>
-      <article>
-        <!-- <img src="./img/mahroof-mahr-739088-unsplash.jpg"/> -->
-        <figcaption>Photo by mahroof mahr on Unsplash</figcaption>
-        <h3>Rip The Cucumbers Off My Eyes</h3>
-        <p>I'm determined to see where I belong. Where is the healing warmth and light that is the sun? Could it be where you live?</p>
-      </article>
-    </section>
+      <section id="work" className="items">
+        <h1>Work</h1>
+        <article>
+          <!-- <img src="./img/jackson-wong-499761-unsplash.jpg"/> -->
+          <figcaption>Photo by Ksenia Kudelkina on Unsplash</figcaption>
+          <h3>A Brief History of Tea Drinking Customs</h3>
+          <p>Tea culture, drinking practices, tea utensils, and teas have changed over a long period of time. Its impact on the world has been a long journey that as of recently has begun to take new form.</p>
+        </article>
+        <article>
+          <!-- <img src="./img/ksenia-kudelkina-7103-unsplash.jpg"/> -->
+          <figcaption>Photo by Ksenia Kudelkina on Unsplash</figcaption>
+          <h3>The Cave - A Time Portal</h3>
+          <p>Ever wonder if all the caves around the world connected through one simple system? Where does one door end and the other begin? What if we can illuminate all the pathways with a single bright light? Oh, the splendor we would see.</p>
+        </article>
+        <article>
+          <!-- <img src="./img/mahroof-mahr-739088-unsplash.jpg"/> -->
+          <figcaption>Photo by mahroof mahr on Unsplash</figcaption>
+          <h3>Rip The Cucumbers Off My Eyes</h3>
+          <p>I'm determined to see where I belong. Where is the healing warmth and light that is the sun? Could it be where you live?</p>
+        </article>
+      </section>
 
-    <section className="item contact">
-      <h1>Contact</h1>
-      <div className="socials">
-        <div>
-          <i class="far fa-envelope"></i>
+      <section id="contact" className="items">
+        <h1>Contact</h1>
+        <div className="socials">
+          <div>
+            <i class="far fa-envelope"></i>
+          </div>
+          <div>
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div>
+            <i class="fab fa-twitter"></i>
+          </div>
         </div>
-        <div>
-          <i class="fas fa-mobile-alt"></i>
-        </div>
-        <div>
-          <i class="fab fa-twitter"></i>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <h4><i class="fa fa-copyright"></i>copyright 2018</h4>
-  </footer>
+    <footer>
+      <h4><i class="fa fa-copyright"></i>copyright 2018</h4>
+    </footer>
+  </div>
 
   <!-- scripts -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
