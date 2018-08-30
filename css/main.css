@@ -104,56 +104,153 @@ textarea {
    --midnight-blue: #093B4A; /* 9 59 74*/
 }
 
-body {
-
+h1, h2, h3, h4, h5, h6, body {
+  font-family: 'Crimson Text', serif;
 }
 
-footer {
-
-  color: var(--midnight-blue);
-
+body {
+  max-width: 1024px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: var(--dim-gray);
 }
 
 .wrapper {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
 }
 
 /* HEADER & NAV */
 header {
+  margin: 0 auto;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  color: var(--dim-gray);
+  background-image: url("../img/angelina-litvin-32188-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 0;
-  color: var(--dim-gray);
+  background-position: middle center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-nav ul {
+header ul {
+  margin: 0;
+  padding: 0;
+}
 
+header nav {
+  font-size: 2em;
+}
+
+#logo {
+  font-size: 2em;
+  color: #FBB02D;
+  letter-spacing: 0.3px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 30px;
 }
 
 nav a {
-
   color: var(--dim-gray);
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+}
 
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--midnight-blue);
+  text-align: center;
+}
+
+.fa, .far, .fab, .fas {
+  color: var(--main-text);
+  font-size: 6em;
+  color: white;
+}
+
+.circle-icon {
+  background: var(--midnight-blue);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 30px;
 }
 
 .items h1 {
   color: var(--dark-olive);
 }
 
-p {
-  color: var(--silver);
+img {
+  width: 100%;
 }
 
 span {
   color: var(--dim-gray);
 }
 
+main {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 80px 0;
+}
 
+main section {
+  grid-column: 2 / span 10;
+}
 
+article h3 {
+  font-size: 1.5em;
+}
 
+#about,
+#work,
+#contact {
+  display: grid;
+  grid-gap: 20px;
+  align-content: center;
+}
 
+#work {
+  grid-gap: 50px;
+}
 
+#about h1,
+#work h1,
+#contact h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#contact .social-links {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+}
+
+#contact .social-links p {
+  font-size: 1.5em;
+}
+
+#work {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
 /* ==========================================================================
    Helper classes
