@@ -170,8 +170,9 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: var(--midnight-blue);
+  color: var(--dim-gray);
   text-align: center;
+  font-size: 1.5em;
 }
 
 .fa, .far, .fab, .fas {
@@ -181,7 +182,7 @@ footer {
 }
 
 .circle-icon {
-  background: var(--midnight-blue);
+  background: var(--dim-gray);
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -192,7 +193,7 @@ footer {
 }
 
 .items h1 {
-  color: var(--dark-olive);
+  color: var(--dim-gray);
 }
 
 img {
@@ -222,12 +223,17 @@ article h3 {
 #work,
 #contact {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   align-content: center;
 }
 
+#about {
+  font-size: 1.25em;
+}
+
 #work {
-  grid-gap: 50px;
+  grid-gap: 30px;
+  font-size: 1.25em;
 }
 
 #about h1,
@@ -245,7 +251,7 @@ article h3 {
 }
 
 #contact .social-links p {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 #work {
