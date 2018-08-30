@@ -96,16 +96,58 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+:root {
+   --dark-olive: #5C714E;
+   --dim-gray: #4C5046;
+   --silver: #C1BDC1;
+   --sea-green: #32743C;
+   --midnight-blue: #093B4A; /* 9 59 74*/
+}
 
+body {
 
+}
 
+footer {
 
+  color: var(--midnight-blue);
 
+}
 
+.wrapper {
+  margin: 0;
+}
 
+/* HEADER & NAV */
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  color: var(--dim-gray);
+}
 
+nav ul {
 
+}
 
+nav a {
+
+  color: var(--dim-gray);
+
+}
+
+.items h1 {
+  color: var(--dark-olive);
+}
+
+p {
+  color: var(--silver);
+}
+
+span {
+  color: var(--dim-gray);
+}
 
 
 
